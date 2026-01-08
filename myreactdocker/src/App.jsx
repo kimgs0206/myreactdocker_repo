@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   const connNode = () =>{
-    fetch('http://10.0.20.6:3001')
+    fetch('/api')
     .then(()=>{
       alert("success")
     })
@@ -29,7 +29,7 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={connNode}>
-          React-node cloud
+          React-node-NaverCloud
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
